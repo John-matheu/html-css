@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens dinamicas</title>
+</head>
+<body>
+    <h1>desafio de imagens dinamicas</h1>
+    <p>partiu!!!</p>
+    <p>as imagens são de tamanho:</p>
+    <ul>
+        <li>1000px</li>
+        <li>700px</li>
+        <li>300px</li>
+    </ul>
+    <picture>
+        <source media="(max-width: 750px )" srcset="fotos/imagemp.jpg" type="image/jpg">
+        <source media="(max-width:1050px )" srcset="fotos/imagem-m.jpg" type="image/jpg">
+        <img src="fotos/castelog.jpg" alt="castelo">
+    </picture>
+</body>
+</html>

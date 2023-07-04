@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias</title>
+</head>
+<body>
+    <h1>imagens dinamiicas</h1>
+    <p>usamos tres tipos de imagens para diferentes dispositivos, o conforto do usuario sempre é importante </p>
+    <h2>tamanho das imagens</h2>
+    <ol>
+        <li>300px</li>
+        <li>700px</li>
+        <li>1000px</li>
+
+    </ol>
+    <picture>
+        <source media="(max-width: 750px)" srcset="midia/fotop.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="midia/fotom.png" type="image/png">
+        <img src="midia/fotog.png" alt="flexivel">
+        <h2>adicionando audio </h2>
+        <p>esse é um exemplo de audio</p>
+    </picture>
+        <audio preload="metadata" controls>
+            <source src="midia/As You Were - TrackTribe.mp3" type="audio/mpeg"> <!--mp3 = mpeg-->
+            <source src="midia/As You Were - TrackTribe.ogg" type="audio/ogg"> <!--ogg é outro formato pode usar-->
+            <source src="midia/As You Were - TrackTribe.wap" type="audio/wav"> <!--não usar o formato wav muito grande-->
+            <p>não deu pra carregar o audio <a href="midia/As You Were - TrackTribe.mp3">por favor baixe aqui</a></p> <!--esse é para caso não de pra carregar o audio -->
+        </audio>
+        <h2>adicionando videos hospedados localmente</h2>
+        <p>primeiro video adicionado</p>
+        <video controls width="500px" poster="midia/fotom.png" ><!--autoplay loop-->
+            <source src="midia/Video.mp4" type="video/mp4">
+            <source src="midia/Video.webm" type="video/webm">
+        </video> <br>
+        <h2>exportando e incorporando videos do youtube</h2>
+        <p>ir no video <br>
+        clicar em compartilhar <br>
+        clicar em incorporar  <br>
+        copiar e colar no codigo do site 
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2AMZt9E5hS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   
+</body>
+
+</html>

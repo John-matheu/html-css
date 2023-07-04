@@ -1,0 +1,29 @@
+
+body {
+    background-color: rgb(93, 209, 235);
+    font: 400;
+
+}
+h1 {
+    color: rgb(242, 215, 132);
+}
+h2 {
+    color: rgb(142, 12, 142);
+}
+p {
+    width: 20cm;
+    box-sizing: border-box;
+    border-radius: 2cm;
+    text-align: center;
+    background-color: rgb(193, 147, 92);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', 'Times New Roman', Times, serif;
+    box-shadow: 100px;
+}
+h3 {
+    width: 20cm;
+    text-align: center;
+    box-sizing: 20cm;
+    background-color: aquamarine;
+    
+    
+}
