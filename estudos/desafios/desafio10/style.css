@@ -2,7 +2,7 @@
 *{
     font-family: var(--font-padrao);
     text-decoration: none;
-    list-style: none;
+    
     margin: 0px
 }
 
@@ -24,8 +24,19 @@
 
 }
 
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
 p {
     text-indent: 50px;
+}
+
+h1 {
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
 }
 
 header {
@@ -41,7 +52,7 @@ background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
 }
 
 
-header h1 {
+header h2 {
     
     font-family:  var(--font-destaque);
     font-weight: bolder;
@@ -97,7 +108,7 @@ main {
 article {
     border: 1px solid black;
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px;
     margin-top: 0px;
     background-color:var(--cor4);
     color: rgb(255, 255, 255); 
@@ -125,36 +136,50 @@ article img {
     border-radius: 10px;
 }
 
-ul {
-    background-color: rgb(255, 255, 255);
-    padding: 25px;
-   
-}
-
-div > li {
-   
-    display: grid;
-    
-}
-div > img {
-   width: 120px;
-   margin-left: 50px;
-   height: 100px;
-
-
-}
-
-div {
+aside {
     display: flex;
     background-color: white;
-     margin: 5%;
-    padding: 5%;
-    border-radius: 5px;
+     margin-top: 20px;
+    padding: 0px;
+    border-radius: 10px;
+    display: block;
+    
 }
 
-
-.video {
+aside p {
+    background-color: var(--cor6);
+    padding-top: 5px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
     
+}
+
+aside > ul {
+
+    margin: 5%;
+    padding-bottom: 5%;
+    list-style: disc;
+    columns: 2;
+    list-style-type: "\2714\00A0\00A0";
+   
+    
+}
+
+div.video {
+    background-color: rgb(207, 205, 48);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+
+}
+
+div.video > iframe {
+position: absolute;
+top: 5%;
+left: 5%;
+width: 90%;
+height: 90%;
 }
 
 footer {
